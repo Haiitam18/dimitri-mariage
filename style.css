@@ -1,0 +1,68 @@
+/* Styles généraux */
+body {
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #edede9;
+}
+
+p {
+  line-height: 1.6;
+  margin: 15px auto;
+  width: 80%; /* Assurez-vous que ça reste à 80% pour le texte */
+}
+
+/* Articles */
+.article {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px auto;
+  max-width: 1200px;
+  padding: 20px;
+  background-color: #f4f3ee;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.article img {
+  width: 45%;
+  height: auto;
+  border-radius: 10px;
+}
+
+.article .content {
+  width: 45%;
+  padding: 20px;
+}
+
+h1 {
+  font-size: 3.5rem; /* Assurez-vous d'utiliser rem ou em pour la réactivité */
+  letter-spacing: -0.15ch;
+  line-height: 0.75;
+  padding-top: 50px;
+  color: #cb997e;
+  text-align: center;
+}
+
+h2 {
+  text-align: center;
+  color: #cb997e;
+}
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .article {
+    flex-direction: column; /* Passe à une colonne sur mobile */
+    align-items: center; /* Centrer le contenu */
+  }
+
+  .article img {
+    width: 100%; /* Image pleine largeur sur mobile */
+    margin-top: 15px;
+  }
+
+  .article .content {
+    width: 100%; /* Contenu pleine largeur sur mobile */
+  }
+}
